@@ -1,0 +1,11 @@
+<% if @questions.where(answer: true, lover: "cat").size == @questions.where(answer: true, lover: "dog").size  %>
+<p>Congratulations.</p>
+<p>YOU ARE A PLANT LOVER!</p>
+<% elsif @questions.where(answer: true, lover: "cat").size > @questions.where(answer: true, lover: "dog").size  %>
+<p>Congratulations.</p>
+<p>YOU ARE A CAT LOVER!</p>
+<% else %>
+<p>Congratulations.</p>
+<p>YOU ARE A DOG LOVER!</p>
+<% end %>
+<p class="button"><%= link_to "Start a new Quiz", question_path(@question, id: rand(1..6), :answer => nil), :method => :put %></p>

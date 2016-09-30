@@ -1,0 +1,10 @@
+<% if  @questions.where(answer: true).size + @questions.where(answer: false).size <= 2 %>
+  <p>
+    <strong>Title:</strong>
+    <%= @question.title %>
+  </p>
+  <%= render 'selection' %>
+  <p class="button"><%= link_to "HOME", root_path %></p>
+<% else %>
+  <%= render 'result' %>
+<% end %>

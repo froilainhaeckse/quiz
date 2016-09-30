@@ -1,0 +1,6 @@
+<h1>Personality Quiz</h1>
+<p><%= @intro %></p>
+<% if  @questions.where(answer: true).size + @questions.where(answer: false).size >= 1 %>
+  <p class="button"><%= link_to "Continue your Quiz", question_path(@question)%></p>
+<% end %>
+<p class="button"><%= link_to "Start a new Quiz", question_path(@question, id: rand(1..6), :answer => nil), :method => :put %></p>

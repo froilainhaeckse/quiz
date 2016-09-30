@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  lover: MyString
+  answer: false
+
+two:
+  title: MyString
+  lover: MyString
+  answer: false
