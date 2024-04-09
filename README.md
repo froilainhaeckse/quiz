@@ -1,20 +1,22 @@
 INTERNSHIP CHALLENGE QUIZ
 ===========================
 
-###The Internship challenge Quiz provides the following functions:###
+This project was done in preperatation of my internship at SoundCloud in 2016 after the Rails Girls Summer of Code at Soundcloud.
+
+### The Internship challenge Quiz provides the following functions:
 
 * test your personality by answering 3 out of 6 random questions
 
-####Written in: Ruby, Rails.####
+#### Written in: Ruby, Rails.
 
-###The Quiz communicates with:###
+### The Quiz communicates with:
 
 * SQLDatbase where the questions and answers are stored.
 
 Installation
 ---------------
 
-###Install system requirements###
+###Install system requirements
 
 You'll need ruby and rails (4) installed.
 
@@ -23,7 +25,7 @@ You'll need ruby and rails (4) installed.
 Running
 ---------
 
-###To run the Quiz:###
+###To run the Quiz:
 
 ```
 cd quiz
